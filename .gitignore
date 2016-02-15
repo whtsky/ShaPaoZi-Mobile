@@ -1,0 +1,6 @@
+shapaozi-key.keystore
+build.json
+node_modules
+platforms/android/assets/www
+platforms/browser/www
+www

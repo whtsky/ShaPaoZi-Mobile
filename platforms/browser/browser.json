@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "me.shapaozi.mobile"
+        },
+        "cordova-universal-clipboard": {
+            "PACKAGE_NAME": "me.shapaozi.mobile"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "me.shapaozi.mobile"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-universal-clipboard/www/clipboard.js",
+            "id": "cordova-universal-clipboard.Clipboard",
+            "pluginId": "cordova-universal-clipboard",
+            "clobbers": [
+                "cordova.plugins.clipboard"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.1",
+        "cordova-universal-clipboard": "0.1.0",
+        "cordova-plugin-crosswalk-webview": "1.5.0"
+    }
+}
