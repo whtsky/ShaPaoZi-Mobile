@@ -19,7 +19,7 @@
     <footer>
       <a
         @click="copyMagnetURL"
-        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
         <i class="material-icons" v-if="copied">done</i>
         复制磁力链接
       </a>

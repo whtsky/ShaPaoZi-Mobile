@@ -4,3 +4,4 @@ node_modules
 platforms/android/assets/www
 platforms/browser/www
 www
+platforms/android/CordovaLib/build
