@@ -1,11 +1,12 @@
 {
-  "name": "ShaPaoZi-Android",
-  "description": "Android App of ShaPaoZi.me",
+  "name": "ShaPaoZi-Mobile",
+  "description": "Mobile App of ShaPaoZi.me",
   "author": "whtsky <whtsky@gmail.com>",
   "contributors": [{
     "name": "Margaux7",
     "email": "154373567@qq.com"
   }],
+  "license" : "BSD-3-Clause",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
