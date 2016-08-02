@@ -15,7 +15,6 @@
     "watch": "webpack -w --config build/webpack.dev.conf.js"
   },
   "dependencies": {
-    "phonegap": "^5.5.0",
     "vue": "^1.0.15",
     "vue-infinite-scroll": "^0.1.2",
     "vue-mdl": "^0.3.7",
@@ -23,6 +22,8 @@
     "vue-router": "^0.7.10"
   },
   "devDependencies": {
+    "phonegap": "^5.5.0",
+    "cordova": "^5.4.1",    
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-plugin-transform-runtime": "^6.0.0",
