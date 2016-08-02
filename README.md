@@ -1,7 +1,7 @@
 # The Mobile App of [ShaPaoZi.me](http://www.shapaozi.me)
 
 A hybrid app using Phonegap.
-Download: https://www.pgyer.com/shapaozi
+** Please Build with Node 5 **
 
 ## Build
 
