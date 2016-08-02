@@ -10,8 +10,9 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "rimraf www && webpack --progress --hide-modules --config build/webpack.prod.conf.js && cordova build android",
-    "release": "rimraf www && webpack --progress --hide-modules --config build/webpack.prod.conf.js && cordova build android --release",
+    "prepare": "rimraf www && webpack --progress --hide-modules --config build/webpack.prod.conf.js",
+    "build": "npm run prepare && cordova build android",
+    "release": "npm run prepare && cordova build android --release",
     "watch": "webpack -w --config build/webpack.dev.conf.js"
   },
   "dependencies": {
