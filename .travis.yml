@@ -1,0 +1,18 @@
+language: android
+android:
+  components:
+  - build-tools-22.0.1
+  - android-22
+install:
+- sudo apt-get install -y python-software-properties
+- curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+- sudo apt-get install -y nodejs
+- sudo npm i
+script:
+- npm run release
+after_success:
+- curl -F "file=@platforms/android/build/outputs/apk/android-release-unsigned.apk" -F "uKey=$U_KEY" -F "_api_key=$API_KEY" http://www.pgyer.com/apiv1/app/upload
+env:
+  global:
+  - secure: j8XiZvyzsbvgl2o+FUykUJCE1uaHPvl7xFEm4aGDAjv8obbQdelUYay43jfe/cas73NnF+U4GoZK5mF8KBxrczvrtNsh3XGnfiunoT2RtZMY2zyoU5TVO61O8aKLPpx0fso72RUxUT/kLQdhmvqIG/wd5NthjKmf5r0ENcf27O/YrGyNx3LxECXmYvfsqHvpAXiELNKzbudLqM8D7fmQAoWQpQQ2VEEDNKA2C5iyLpmxkzuAwI/+nDJ+/Q+Xiekyb4Be/gr53/KJz1sEAho2p2yPHVYdZqVpdZUW00F4E1fI/KtmrSPqb9Dw2pb/D4tMM+3XHfBhMcRwMeAdY5dQEIHI6Y9mbQnaPZ7qM0HHtZdMHbWq26JowtSBbu5PEKRrXXAOv70u1vSRxt80Bu/jqEHPg+3Zr5IRiBclZ5DvqUUsfxaoVFN0QPrWGPRd6sS3AvrxdtBuRQ8ZAHoY9RELRmNgIQHMbJUAzoPNBz8XNLQO75FX0bk7pABMlZ+0LJfTCA0cxHebSuQutWnQ/77eS89eUs1VvPYUNTd1RP81O7JWnDLymW9JLqatE0xLf1BgZ5ttUcM8VvIOWvbltormttOby4wv18M2RAalAxz0A0zhc3fem1CaLbySss/1b1VVP+rtb7RRvKXoTcJb3egoDdTIdX51SrCDV/c8Qy55Cxo=
+  - secure: UShAFfDtIuyJEt6AL/Om4cqMKr8URzFUUeJlukozM5dlAkDCIe7d18rE2y3kuXJYdbXfK/vEFEm+/EAW7uFFYimmvGAJTXLfc6bsl5CF0uhvP96KGe6JbREkQkrC+EJG7MXDOQ0iF2LsDp6et20zCnsXAgVRjOrWxs/lClHAs4p42y+yYNabZ3RgC0aWcVx3GTuvO6yL0pxfNwP28E+MEANI1fLoyc7xsp88PNiFJuJLyX/ZaY4bOhSi7G1t7b29NnZaSLeo/Ps4950z5JfkjouZbgZ+fA+VRWayaj0uaQnNDHrLHlcDcgQQyR7xhbQL7m7RM3HBSi35BP4yHRuPTahKdAJGYRDXH4EjT9B1PHfYfac4j9VR77Q/8ejV5/31158YUkUabjBVEl0tQwe9zbRavKlBIhGg42rZKMGCF6Ar649UiSgXwljOhIrbwy2H9+YN/97Sy0Kvgv9QdsRyPvIXWDlOV3zlCRhg7F1qqqjxflBtF3JEqMG5lDuPtr7yDhgcGM0xwDI6Hs6qEJ8cqX6LsadihWo4mXTAiyrATZBimQ8tuTmdbeftXzGGq+Pmn9vqHCl1486QRrBDVJEoM1gD4FFECUxt9Blv4OSGynNZykjmhng0mAhuCaAnlnnbwUouXhn/oRVRvNeco98J4VlJ5MAxXOF4zD7Jgs8zacc=

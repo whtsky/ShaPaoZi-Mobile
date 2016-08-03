@@ -1,5 +1,5 @@
 <?xml version='1.0.1' encoding='utf-8'?>
-<widget id="me.shapaozi.mobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="me.shapaozi.mobile" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ShaPaoZi</name>
     <description>
         The Andoird App of ShaPaoZi.me
@@ -26,7 +26,7 @@
     <allow-intent href="magnet:*" />
     <access origin="*" />
     <engine name="android" spec="~4.1.1" />
-    <preference name="xwalkVersion" value="16+" />
+    <preference name="xwalkVersion" value="20+" />
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
     <preference name="xwalkMode" value="embedded" />
     <preference name="xwalkMultipleApk" value="false" />
