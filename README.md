@@ -1,5 +1,7 @@
 # The Mobile App of [ShaPaoZi.me](http://www.shapaozi.me)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/whtsky/ShaPaoZi-Mobile.svg)](https://greenkeeper.io/)
+
 A hybrid app using Phonegap.
 ** Please Build with Node 5 **
 
